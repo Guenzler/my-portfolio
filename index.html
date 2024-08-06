@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <title>Portfolio Eva Günzler</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Eva Günzler</div>
+            <ul role="menubar" class="nav-links">
+                <li role="presentation"><a role="menuitem" href="#home">Home</a></li>
+                <li role="presentation"><a role="menuitem" href="#about">About Me</a></li>
+                <li role="presentation"><a role="menuitem" href="#work">Work</a></li>
+                <li role="presentation"><a role="menuitem" href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" role="menuitem">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <main class="content-container">
+            <h1>Hi, I'm Eva</h1>
+            <p class="introtext">I'm a JavaScript developer with a background in graphic design, based in Hamburg,
+                Germany</p>
+            <form action="#work" method="get" class="checkOutWork">
+                <button type="submit">Check out my work</button>
+            </form>
+        </main>
+        <div class="social-media">
+            <!-- Github logo -->
+            <a href="https://github.com/Guenzler" target="_blank" class="social-link"><img
+                    src="img/github-mark-white.svg" alt="github" class="github"></a>
+            <!-- LinkedIn logo -->
+            <a href="#" target="_blank" class="social-link"><img src="img/In-White-34.png" alt="linkedin"
+                    class="linkedin"></a>
+        </div>
+    </section>
+
+    <section id="about">
+        <main class="content-container">
+            <h1>About Me</h1>
+            <p>I have always been interested in IT and software development as well as design. Math was my best subject
+                at school and programming was easy for me.</p>
+            <p>After studying at art college, I started out as a designer.
+                Fascinated by the emergence of the Internet in the 1990s, I changed careers and switched to the IT
+                sector, where I first worked for an IT company, later as freelancer in web design and web development.
+                During
+                the last years the main focus of my work has been graphic design with an emphasis on print.</p>
+            <p>By taking a course in full stack web developent I brought my know-how in JavaScript
+                programming up to date. Now I'm looking forward to contributing my knowledge as a web developer to an
+                innovative team. I am available for hire for full time and part time work in this field.</p>
+        </main>
+    </section>
+
+    <section id="skills">
+        <span class="mySkills">JavaScript ES6</span>
+        <span class="mySkills">HTML</span>
+        <span class="mySkills">CSS </span>
+        <span class="mySkills">Git</span>
+        <span class="mySkills">React </span>
+        <span class="mySkills">Node.js</span>
+        <span class="mySkills">MongoDB</span>
+        <span class="mySkills">Express</span>
+        <span class="mySkills">Firebase</span>
+        <span class="mySkills">Bootstrap</span>
+        <span class="mySkills">JQuery</span>
+    </section>
+
+    <section id="work">
+        <h1>My Work</h1>
+        <div class="grid">
+            <div class="grid__item">
+                <div class="image-container">
+                    <img src="img/screen-pokedex-1.png" alt="screenshot showing Pokedex App with navigation bar"
+                        class="grid-top">
+                </div>
+                <div class="grid__content">
+                    <h2>Pokédex App</h2>
+                    <p>
+                        A small web application built with HTML, CSS and vanilla JavaScript that loads pokemon data from
+                        an
+                        external API and enables the viewing of data points in detail.
+                    </p>
+                    <div class="button-wrapper">
+                        <a href="https://github.com/Guenzler/pokedex-app" target="_blank" class="project-link"><img
+                                src="img/github_icon.svg" alt="see project on github" class="github-project"></a>
+                        <button id="openModalBtn1" class="opModalBtn">See more details</button>
+                    </div>
+                    <div id="myModal1" class="modal">
+                        <div class="modal-content">
+                            <span class="modalClose">&times;</span>
+                            <h2>Pokédex App</h2>
+                            <h3>Objective</h3>
+                            <p>To build a small web application with HTML, CSS, and JavaScript that loads
+                                data from an external API and enables the viewing of data points in detail</p>
+                            <h3>Screenshots</h3>
+                            <img src="img/screen-pokedex-1.png" alt="screenshot showing Pokedex App with navigation bar"
+                                class="appScreens">
+                            <img src="img/screen-pokedex-2.png"
+                                alt="screenshot showing Pokedex App with details modal and load more button"
+                                class="appScreens">
+                            <h3>Technologies used</h3>
+                            <ul>
+                                <li>App was created with vanilla JavaScript</li>
+                                <li>Data is loaded from pokeapi.co</li>
+                                <li>Bootstrap and jQuery used for styling and navigation bar</li>
+                            </ul>
+                            <p><a href="https://guenzler.github.io/pokedex-app/" target="_blank">Link to live app</a>
+                            </p>
+                            <p><a href="https://github.com/Guenzler/pokedex-app" target="_blank">See project on
+                                    Github</a></p>
+                            <span class="modalClose bottomClose">Close window</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="image-container">
+                    <img src="img/movie-api.png" alt="screenshot showing the code of server-side web app"
+                        class="grid-top">
+                </div>
+                <div class="grid__content">
+
+                    <h2>Movie REST API</h2>
+                    <p>
+                        Server-side component of a web application built with Node.js, Express and MongoDB.<br> The app
+                        provides users with access to information
+                        about different movies, directors and genres. Users can sign up, update their
+                        personal information, and create a list of their favorite movies.
+                    </p>
+                    <div class="button-wrapper">
+                        <a href="https://github.com/Guenzler/movie_api" target="_blank" class="project-link"><img
+                                src="img/github_icon.svg" alt="see project on github" class="github-project"></a>
+                        <button id="openModalBtn2" class="opModalBtn">See more details</button>
+                    </div>
+                    <div id="myModal2" class="modal">
+                        <div class="modal-content">
+                            <span class="modalClose">&times;</span>
+                            <h2>Movie REST API</h2>
+                            <h3>Objective</h3>
+                            <p>To build the server-side component of a “movies” web application. The web
+                                application will provide users with access to information about different
+                                movies, directors, and genres. Users can able to sign up, update their
+                                personal information, and create a list of their favorite movies.</p>
+                            <h3>Technologies used</h3>
+                            <ul>
+                                <li>Node.js: JavaScript runtime environment</li>
+                                <li>Express: Back end web application framework for building RESTful APIs with Node.js
+                                </li>
+                                <li>MongoDB with Mongoose: NoSQL database and Object Data Modeling library for Node.js
+                                </li>
+                                <li>bcrypt: Express middleware for password hashing</li>
+                                <li>body-parser: Express middleware for parsing request bodies.</li>
+                                <li>express-validator: Middleware for input validation in Express.</li>
+                                <li>jsonwebtoken: Library for JWT ( JSON Web Token) generation and verification</li>
+                                <li>morgan: request logger middleware for Node.js</li>
+                                <li>passport: Authentication middleware for Node.js.</li>
+                                <li>passport-jwt: Passport strategy for JWT authentication.</li>
+                                <li>passport-local: Passport strategy for username/password authentication.</li>
+                                <li>swagger-jsdoc: library that reads JSDoc annotated source code and gereantes an OPen
+                                    API specification</li>
+                                <li>swagger-ui-express: Express middleware for auto-generating swager-ui generated API
+                                    docs</li>
+                            </ul>
+                            <p>The app is currently hosted with heroku.</p>
+                            <p><a href="https://movie-app-2024-716106e34297.herokuapp.com/swagger/"
+                                    target="_blank">Endpoint
+                                    documentation with swagger</a></p>
+                            <p><a href="https://movie-app-2024-716106e34297.herokuapp.com/" target="_blank">Link to live
+                                    project</a></p>
+                            <p><a href="https://github.com/Guenzler/movie_api" target="_blank">See project on Github</a>
+                            </p>
+                            <span class="modalClose bottomClose">Close window</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="image-container">
+                    <img src="img/screen-movieapp-1.jpg"
+                        alt="screenshot showing movie app after login, displaying all movie cards" class="grid-top">
+                </div>
+                <div class="grid__content">
+                    <h2>Movie App client</h2>
+                    <p>
+                        This React App is the client side component of the Movie REST API.<br>
+                        Users are provided with access to information about different movies, directors and genres.
+                        Users can sign up, update their personal information, and create a list of their favorite
+                        movies.
+                    </p>
+                    <div class="button-wrapper">
+                        <a href="https://github.com/Guenzler/myFlix-client" target="_blank" class="project-link"><img
+                                src="img/github_icon.svg" alt="see project on github" class="github-project"></a>
+                        <button id="openModalBtn3" class="opModalBtn">See more details</button>
+                    </div>
+                    <div id="myModal3" class="modal">
+                        <div class="modal-content">
+                            <span class="modalClose">&times;</span>
+                            <h2>Movie App client</h2>
+                            <h3>Objective</h3>
+                            <p>Using React, build the client-side for the movie app based on its
+                                existing server-side code (REST API and database).</p>
+                            <h3>Screenshots</h3>
+                            <img src="img/screen-movieapp-1.jpg"
+                                alt="screenshot showing movie app after login, displaying all movie cards"
+                                class="appScreens">
+                            <img src="img/screen-movieapp-2.jpg" alt="screenshot showing user profile of movie app"
+                                class="appScreens">
+                            <h3>Technologies used</h3>
+                            <ul>
+                                <li>React, React-DOM</li>
+                                <li>Bootstrap, React-Bootstrap</li>
+                                <li>Prop-Types</li>
+                                <li>React-Router, React-Router-DOM</li>
+                                <li>Parcel, Parcel/transformer-sass</li>
+                            </ul>
+                            <p>The client side app is currently hosted on netlifly.</p>
+                            <p><a href="https://movie-app-483832.netlify.app" target="_blank">Link to live app</a></p>
+                            <p><a href="https://github.com/Guenzler/myFlix-client" target="_blank">See project on
+                                    Github</a></p>
+                            <span class="modalClose bottomClose">Close window</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="image-container">
+                    <img src="img/screen-meet-app-1.png"
+                        alt="screenshot showing Meet App input fields and data visualization" class="grid-top">
+                </div>
+                <div class="grid__content">
+                    <h2>Meet App</h2>
+                    <p>
+                        A serverless, progressive web application (PWA) with React using a test-driven development (TDD)
+                        technique. The application uses the Google Calendar API to fetch upcoming events, authentication
+                        is handled by serverless functions.
+                    </p>
+                    <div class="button-wrapper">
+                        <a href="https://github.com/Guenzler/Meet_APP" target="_blank" class="project-link"><img
+                                src="img/github_icon.svg" alt="see project on github" class="github-project"></a>
+                        <button id="openModalBtn4" class="opModalBtn">See more details</button>
+                    </div>
+                    <div id="myModal4" class="modal">
+                        <div class="modal-content">
+                            <span class="modalClose">&times;</span>
+                            <h2>Meet App</h2>
+                            <h3>Objective</h3>
+                            <p>To build a serverless, progressive web application (PWA) with React using a
+                                test-driven development (TDD) technique. The application uses the Google
+                                Calendar API to fetch upcoming events.</p>
+
+                            <h3>Screenshots</h3>
+                            <img src="img/screen-meet-app-1.png"
+                                alt="screenshot showing Meet App input fields and data visualization"
+                                class="appScreens">
+                            <img src="img/screen-meet-app-2.png" alt="screenshot showing Meet App event list"
+                                class="appScreens">
+
+                            <h3>Technologies used in project</h3>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>AWS Lambda functions to handle authentication process with Google</li>
+                                <li>Google Calender API</li>
+                                <li>Test Driven Development</li>
+                                <li>Test runner jest for unit and integration tests</li>
+                                <li>Jest-cucumber for acceptance tests</li>
+                                <li>Pupeteer for end-to-end tests</li>
+                                <li>gh-pages for deploying and hosting with GitHub Pages</li>
+                                <li>Web App Manifest and Service Worker was implemented to convert app into a
+                                    Progressive Web Application</li>
+                                <li>Recharts for data visualization</li>
+                            </ul>
+                            <p><a href="https://guenzler.github.io/Meet_APP/" target="_blank">Link to live App</a><br>
+                                To view the app, login with a google account is required.
+                            </p>
+                            <p><a href="https://github.com/Guenzler/Meet_APP" target="_blank">See project on Github</a>
+                            </p>
+                            <span class="modalClose bottomClose">Close window</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="image-container">
+                    <img src="img/chat-app1a.png" alt="Screenshot of Chat App" class="grid-top">
+                </div>
+                <div class="grid__content">
+                    <h2>Chat App</h2>
+                    <p>
+                        Cross-plattform native app built with React Native and Expo. Users can chat in real-time, send
+                        images and share their location. Google firebase/firestore is used to facilitate Real Time Data.
+                    </p>
+                    <div class="button-wrapper">
+                        <a href="https://github.com/Guenzler/chat-app" target="_blank" class="project-link"><img
+                                src="img/github_icon.svg" alt="see project on github" class="github-project"></a>
+                        <button id="openModalBtn5" class="opModalBtn">See more details</button>
+                    </div>
+                    <div id="myModal5" class="modal">
+                        <div class="modal-content">
+                            <span class="modalClose">&times;</span>
+                            <h2>Chat App</h2>
+                            <h3>Objective</h3>
+                            <p>To build a chat app for mobile devices using React Native. The app will
+                                provide users with a chat interface and options to share images and their
+                                location.</p>
+                            <h3>Main Features</h3>
+                            <p>Users are authenticated anonymously with Firebase. Conversations and images are stored in
+                                Firestore Database. Chat are stored locally on the device to allow for offline viewing.
+                                Users are able to choose pictures from their library or take new pictures and post them.
+                                Users are able to send their current location in a map.</p>
+                            <h3>Screenshots</h3>
+                            <img src="img/chat-app2.png" alt="Screenshot of chat app" class="appScreens">
+                            <img src="img/chat-app4.png" alt="Screenshot of chat app" class="appScreens">
+                            <h3>Technologies used</h3>
+                            <ul>
+                                <li>React Native</li>
+                                <li>Expo</li>
+                                <li>Gifted Chat</li>
+                                <li>Android Studio for testing</li>
+                                <li>Google Firebase/Firestore</li>
+                            </ul>
+                            <p><a href="https://github.com/Guenzler/chat-app" target="_blank">See project on
+                                    Github</a></p>
+                            <span class="modalClose bottomClose">Close window</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="image-container">
+                    <img src="img/angular-app3.png" alt="Screenshot of Angular Movie App" class="grid-top">
+                </div>
+                <div class="grid__content">
+                    <h2>Angular Movie App</h2>
+                    <p>
+                        A second client side component to the Movie REST API, built with Angular. The app was developed
+                        with Angular CLI version 17 and Angular Material.
+                    </p>
+                    <div class="button-wrapper">
+                        <a href="https://github.com/Guenzler/angular-myflix" target="_blank" class="project-link"><img
+                                src="img/github_icon.svg" alt="see project on github" class="github-project"></a>
+                        <button id="openModalBtn6" class="opModalBtn">See more details</button>
+                    </div>
+                    <div id="myModal6" class="modal">
+                        <div class="modal-content">
+                            <span class="modalClose">&times;</span>
+                            <h2>Angular Movie App</h2>
+                            <h3>Objective</h3>
+                            <p>Using Angular, build a client-side for an application called Movie Api based on
+                                its existing server-side code (REST API and database), with supporting
+                                documentation.
+                            </p>
+                            <h3>Features</h3>
+                            <p>The app displays a welcome page where users can register or login. After login, users can
+                                browse movies, click on genre, director or synopsis button to view more details, and add
+                                or remove movies from their favorites. Users can navigate to their profile view, where
+                                they can update their user information, deregister and see the list of their favorite
+                                movies.</p>
+                            <p>The project was documented using Typedoc.</p>
+                            <h3>Screenshots</h3>
+                            <img src="img/angular-app2.png" alt="Screenshot of movie app built with Angular"
+                                class="appScreens">
+                            <img src="img/angular-app4.png" alt="Screenshot of movie app built with Angular"
+                                class="appScreens">
+                            <h3>Technologies used</h3>
+                            <ul>
+                                <li>Angular: A powerful web application framework</li>
+                                <li>Angular Material: A UI component library for Angular applications.</li>
+                                <li>RxJS: A library for reactive programming using Observables.</li>
+                            </ul>
+                            <p><a href="https://movieapp.guenzler.net/" target="_blank">Link to live
+                                    app.</a></p>
+                            <p><a href="https://github.com/Guenzler/angular-myflix" target="_blank">See project on
+                                    Github</a></p>
+                            <span class="modalClose bottomClose">Close window</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="image-container">
+                    <img src="img/my-portfolio.png" alt="Screenshot of portfolio website" class="grid-top">
+                </div>
+                <div class="grid__content">
+                    <h2>Portfolio website</h2>
+                    <p>
+                        The website you are looking at - single page, responsive website built mostly with HTML and CSS
+                        with a little
+                        help from JavaScipt for the hamburger menu and for opening the modals.
+                    </p>
+                    <div class="button-wrapper">
+                        <a href="https://#" target="_blank" class="project-link"><img src="img/github_icon.svg"
+                                alt="see project on github" class="github-project"></a>
+                        <button id="openModalBtn7" class="opModalBtn">See more details</button>
+                    </div>
+                    <div id="myModal7" class="modal">
+                        <div class="modal-content">
+                            <span class="modalClose">&times;</span>
+                            <h2>Portfolio website</h2>
+                            <h3>Objective</h3>
+                            <p>To build a website to showcase my professional portfolio.</p>
+                            <h3>Screenshot</h3>
+                            <img src="img/my-portfolio.png" alt="screenshot of my portfolio website" class="appScreens">
+
+                            <h3>Technologies used</h3>
+                            <p>The app is a single-page, responsive, static website that was mainly built with HTML and
+                                CSS, with a little bit of JavaScript to help with the hamburger menu and the modals.</p>
+                            <p><a href="https://github.com/Guenzler/#" target="_blank">See project on
+                                    Github</a></p>
+                            <span class="modalClose bottomClose">Close window</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Any questions? I look forward to hearing from you!</p>
+        <p>kontakt@guenzler.net</p>
+
+        <div class="social-media">
+            <!-- Github logo -->
+            <a href="https://github.com/Guenzler" target="_blank" class="social-link"><img
+                    src="img/github-mark-white.svg" alt="github" class="github"></a>
+            <!-- LinkedIn logo -->
+            <a href="#" target="_blank" class="social-link"><img src="img/In-White-34.png" alt="linkedin"
+                    class="linkedin"></a>
+        </div>
+
+    </section>
+    <script src="js/script.js"></script>
+    <!--<script src="js/tota11y.min.js"></script>-->
+</body>
+
+</html>
