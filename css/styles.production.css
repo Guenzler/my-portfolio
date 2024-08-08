@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* styles.css */
 
 /* kanit-300 - latin */
@@ -33,28 +40,6 @@ Highlights (green): #5b8900
 secondary highlights (blue-green): #005858
 
 */
-:root {
-    --primary-color: #930000;
-    --visited-link-color: #be1313;
-    --secondary-color: #5b8900;
-    --text-color: #070808;
-    --text-color-light: white;
-    --page-background-color: #f4f6f5;
-    --background-color: #535353;
-    --background-table-grid: #e2e0e0;
-    --font-weight-normal: 300;
-    --font-weight-bold: 500;
-    --margin-for-wide-screens: 100px;
-    --margin-for-intermediate-screens: 60px;
-    --large-margin: 40px;
-    --medium-margin: 20px;
-    --small-margin: 10px;
-    --font-size-regular: 16px;
-    --font-size-h1: 30px;
-    --font-size-h2: 22px;
-    --font-size-h3: 18px;
-    --font-size-label: 14px;
-}
 
 
 /*
@@ -67,52 +52,57 @@ secondary highlights (blue-green): #005858
 
 body {
     margin: 0;
-    background-color: var(--page-background-color);
+    background-color: #f4f6f5;
     font-family: 'Kanit', sans-serif;
-    font-weight: var(--font-weight-normal);
-    font-size: var(--font-size-regular);
+    font-weight: 300;
+    font-size: 16px;
     line-height: 1.6;
-    color: var(--text-color);
+    color: #070808;
 }
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 h1 {
-    font-size: var(--font-size-h1);
-    font-weight: var(--font-weight-bold);
+    font-size: 30px;
+    font-weight: 500;
     line-height: 1.8;
 }
 
 h2 {
-    font-size: var(--font-size-h2);
-    font-weight: var(--font-weight-bold);
+    font-size: 22px;
+    font-weight: 500;
 }
 
 h3 {
-    font-size: var(--font-size-h3);
-    font-weight: var(--font-weight-bold);
+    font-size: 18px;
+    font-weight: 500;
 }
 
 a {
-    color: var(--primary-color);
+    color: #930000;
 }
 
 a:visited {
     /* visited link */
-    color: var(--visited-link-color);
+    color: #be1313;
 }
 
-a:hover,
+a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #930000;
+}
+
 a:focus {
     text-decoration: none;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 2px solid #930000;
 }
 
 a:active {
     /* selected link */
-    color: var(--secondary-color);
+    color: #5b8900;
 }
 
 button {
@@ -123,18 +113,20 @@ button {
     font-family: inherit;
 
     /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: var(--background-color);
-    color: var(--text-color-light);
+    background-color: #535353;
+    color: white;
     text-decoration: none;
 
     /* adds spacing to the button  */
-    padding: var(--small-margin) var(--medium-margin);
+    padding: 10px 20px;
     border-radius: 3px;
 
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 
     /* defining transition for the submit button */
+    -webkit-transition: opacity 0.8s;
+    -o-transition: opacity 0.8s;
     transition: opacity 0.8s;
 }
 
@@ -158,29 +150,40 @@ button:focus {
 header {
     position: fixed;
     width: 100%;
-    background: var(--primary-color);
-    color: var(--text-color-light);
-    font-weight: var(--font-weight-normal);
+    background: #930000;
+    color: white;
+    font-weight: 300;
     z-index: 1000;
     top: 0;
 }
 
 nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--medium-margin);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
     position: relative;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .nav-links {
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-transition: max-height 0.8s ease-out;
+    -o-transition: max-height 0.8s ease-out;
     transition: max-height 0.8s ease-out;
     overflow: hidden;
     max-height: none;
-    background-color: var(--primary-color);
+    background-color: #930000;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -188,11 +191,13 @@ nav {
 .nav-links li {
     margin: 0;
     padding: 10px 20px;
-    transition-duration: 0.8s;
+    -webkit-transition-duration: 0.8s;
+         -o-transition-duration: 0.8s;
+            transition-duration: 0.8s;
 }
 
 .nav-links li:hover {
-    background: var(--text-color);
+    background: #070808;
 
 }
 
@@ -202,18 +207,19 @@ nav {
 }
 
 .nav-links a {
-    color: var(--text-color-light);
+    color: white;
     text-decoration: none;
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-h3);
+    font-weight: 500;
+    font-size: 18px;
 }
+
 .nav-links a.active {
     text-decoration: underline;
 }
 
 .logo {
-    font-size: var(--font-size-h2);
-    font-weight: var(--font-weight-bold);
+    font-size: 22px;
+    font-weight: 500;
 }
 
 
@@ -227,7 +233,10 @@ nav {
 
 .hamburger {
     display: none;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     cursor: pointer;
     z-index: 1010;
 }
@@ -243,11 +252,15 @@ nav {
     height: 3px;
     background: white;
     margin: 4px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
 }
 
 .hamburger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(10px, 10px);
+    -webkit-transform: rotate(45deg) translate(10px, 10px);
+        -ms-transform: rotate(45deg) translate(10px, 10px);
+            transform: rotate(45deg) translate(10px, 10px);
 }
 
 .hamburger.active .line:nth-child(2) {
@@ -255,7 +268,9 @@ nav {
 }
 
 .hamburger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    -webkit-transform: rotate(-45deg) translate(5px, -5px);
+        -ms-transform: rotate(-45deg) translate(5px, -5px);
+            transform: rotate(-45deg) translate(5px, -5px);
 }
 
 
@@ -269,7 +284,7 @@ nav {
 
 section {
     padding: 80px 20px 30px 20px;
-    background: var(--page-background-color);
+    background: #f4f6f5;
 }
 
 .content-container {
@@ -277,13 +292,13 @@ section {
 }
 
 #home {
-    background-color: var(--primary-color);
-    color: var(--text-color-light);
+    background-color: #930000;
+    color: white;
     text-align: center;
 }
 
 .introtext {
-    font-size: var(--font-size-h2);
+    font-size: 22px;
 }
 
 #about {
@@ -292,29 +307,44 @@ section {
 }
 
 #skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
     padding: 0px;
 }
 
 .mySkills {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     padding: 18px;
-    background-color: var(--background-color);
-    color: var(--text-color-light);
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-size-h2);
+    background-color: #535353;
+    color: white;
+    font-weight: 500;
+    font-size: 22px;
     text-align: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
 }
 
 #contact {
-    background-color: var(--primary-color);
-    color: var(--text-color-light);
+    background-color: #930000;
+    color: white;
     text-align: center;
     padding: 80px 20px 80px 20px;
+}
+
+#impressum {
+    text-align: center;
+    padding: 40px 20px 180px 20px;
 }
 
 .social-link {
@@ -325,11 +355,13 @@ section {
     text-align: center;
     line-height: 64px;
     background-color: transparent;
+    -webkit-transition: background-color 0.8s ease;
+    -o-transition: background-color 0.8s ease;
     transition: background-color 0.8s ease;
 }
 
 .social-link:hover {
-    background-color: var(--text-color);
+    background-color: #070808;
     border: 0px;
 }
 
@@ -345,11 +377,6 @@ section {
 
 .checkOutWork {
     margin-bottom: 4em;
-}
-
-#impressum {
-    text-align: center;
-    padding: 40px 20px 180px 20px;
 }
 
 /*
@@ -380,6 +407,8 @@ section {
     text-align: center;
     line-height: 34px;
     background-color: transparent;
+    -webkit-transition: background-color 0.8s ease;
+    -o-transition: background-color 0.8s ease;
     transition: background-color 0.8s ease;
     margin-bottom: 0;
     vertical-align: bottom;
@@ -387,7 +416,7 @@ section {
 }
 
 .project-link:hover {
-    background-color: var(--text-color-light);
+    background-color: white;
     border-width: 0;
 }
 
@@ -406,20 +435,23 @@ section {
 
 @supports (display: grid) {
     .grid {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: var(--medium-margin);
+        grid-gap: 20px;
         margin: 0;
     }
 
     .grid__item {
         position: relative;
-        background-color: var(--background-table-grid);
+        background-color: #e2e0e0;
         padding: 0 0px 50px 0px;
         width: auto;
         min-height: auto;
         margin: 0;
-        box-shadow: 2px 2px 10px -3px rgba(52, 58, 64, 0.99);
+        -webkit-box-shadow: 2px 2px 10px -3px rgba(52, 58, 64, 0.99);
+                box-shadow: 2px 2px 10px -3px rgba(52, 58, 64, 0.99);
 
     }
 }
@@ -482,7 +514,8 @@ section {
     height: 100vh;
     overflow: auto;
     overflow-y: scroll;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .button-wrapper {
@@ -557,13 +590,15 @@ section {
 
     @supports (display: grid) {
         .grid {
+            display: -ms-grid;
             display: grid;
+            -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
             grid-template-columns: 1fr 1fr 1fr;
         }
 
         .grid__item {
             position: relative;
-            background-color: var(--background-table-grid);
+            background-color: #e2e0e0;
             padding: 0 0px 50px 0px;
             width: auto;
             min-height: auto;
@@ -584,13 +619,15 @@ section {
 
     @supports (display: grid) {
         .grid {
+            display: -ms-grid;
             display: grid;
+            -ms-grid-columns: 1fr 20px 1fr;
             grid-template-columns: 1fr 1fr;
         }
 
         .grid__item {
             position: relative;
-            background-color: var(--background-table-grid);
+            background-color: #e2e0e0;
             padding: 0 0px 50px 0px;
             width: auto;
             min-height: auto;
@@ -603,7 +640,10 @@ section {
 
     .nav-links {
         display: none;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         max-height: 0;
         width: 100%;
         position: absolute;
@@ -611,11 +651,14 @@ section {
         /* Positioning it right below the header */
         left: 0;
         /* Align to the left of the nav container */
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         display: block;
     }
 
     .nav-links.active {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         max-height: 300px;
         /* Adjust based on number of links */
@@ -629,6 +672,8 @@ section {
     }
 
     .hamburger {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
@@ -643,7 +688,9 @@ section {
 
     @supports (display: grid) {
         .grid {
+            display: -ms-grid;
             display: grid;
+            -ms-grid-columns: 1fr;
             grid-template-columns: 1fr;
         }
     }
