@@ -7,7 +7,7 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Function to open a specific modal
     function openModal(modalId) {
         let modal = document.getElementById(modalId);
@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
     let openModalBtns = document.querySelectorAll("[id^='openModalBtn']");
 
     // Attach click event to each button to open the corresponding modal
-    openModalBtns.forEach(function(btn) {
-        btn.onclick = function() {
+    openModalBtns.forEach(function (btn) {
+        btn.onclick = function () {
             let modalId = "myModal" + btn.id.replace("openModalBtn", "");
             openModal(modalId);
         }
@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Get all close buttons and attach click event to close their parent modal
     let closeBtns = document.querySelectorAll(".modalClose");
-    closeBtns.forEach(function(btn) {
-        btn.onclick = function() {
+    closeBtns.forEach(function (btn) {
+        btn.onclick = function () {
             let modal = btn.closest(".modal");
             if (modal) {
                 modal.style.display = "none";
@@ -47,9 +47,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // When the user clicks anywhere outside of a modal, close it
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         let modals = document.querySelectorAll(".modal");
-        modals.forEach(function(modal) {
+        modals.forEach(function (modal) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
@@ -57,10 +57,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // When the user presses the escape key, close all modals
-    document.onkeydown = function(event) {
+    document.onkeydown = function (event) {
         if (event.key === "Escape") {
             let modals = document.querySelectorAll(".modal");
-            modals.forEach(function(modal) {
+            modals.forEach(function (modal) {
                 modal.style.display = "none";
             });
         }
