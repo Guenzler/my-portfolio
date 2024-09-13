@@ -174,7 +174,7 @@
     margin-top: 0;
     margin-bottom: 0;
   }
-  
+
   .nav-links li {
     margin: 0;
     padding: 5px 20px;
@@ -182,10 +182,16 @@
          -o-transition-duration: 0.8s;
             transition-duration: 0.8s;
   }
+
+  .nav-links li.lang-links {
+    padding: 8px 3px 5px;
+  }
   
+
   .nav-links li:hover {
     background: #3b4283;
-  
+    border-bottom: 0px;
+    text-decoration: none;
   }
   
   .nav-links li:hover a {
@@ -208,6 +214,11 @@
     font-size: 22px;
     font-weight: 500;
   }
+
+  .language {
+    width: 30px;
+    height: 20px;
+  }
   
   /*
   *********************************************
@@ -226,7 +237,7 @@
     cursor: pointer;
     z-index: 1010;
   }
-  
+
   .nav-links.active {
     display: block;
     margin: 0;
@@ -396,6 +407,11 @@
   #impressum {
     text-align: center;
     padding: 40px 20px 250px 20px;
+  }
+
+
+  .icons {
+    font-size: 12px;
   }
   
   /*
@@ -762,6 +778,11 @@
         padding: 10px 20px;
         width: 100%;
     }
+    .nav-links li.lang-links  {
+      text-align: right;
+      padding: 10px 20px;
+      width: 100%;
+  }
   
     .hamburger {
         display: -webkit-box;
