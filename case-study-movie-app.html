@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <title>Case Study Movie App</title>
+    <link rel="stylesheet" href="css/styles.production.css">
+    <link rel="stylesheet" href="css/styles-casestudy.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul role="homebutton" class="cs-nav-links">
+                <li role="presentation">
+                    <a role="menuitem" href="index.html">Eva Günzler</a>
+                </li>
+            </ul>
+            <ul role="menubar" class="cs-nav-links">
+                <li role="presentation"><a role="menuitem" href="index.html#case-study1">Zurück</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="content-container">
+            <h1>Case Study Movie App</h1>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="column column-one">
+            <h1 class="cs-headline cs-box-headline">WAS</h1>
+            <div class="cs-box">
+                <div class="overlay-box"></div>
+                <div class="content-box">
+                    <p> Eine Webanwendung, die Informationen über Filme, Genres
+                        und Regisseure bereitstellt. User können einen Account erstellen, in einer Filmdatenbank suchen,
+                        eine Liste mit Favoriten
+                        anlegen und persönliche Informationen ändern.
+                        Server- und clientseitiger Teil der Anwendung wurden mithilfe
+                        des MERN-Stacks erstellt.</p>
+                </div>
+            </div>
+            <h1 class="cs-headline cs-box-headline">WARUM</h1>
+            <div class="cs-box">
+                <div class="overlay-box"></div>
+                <div class="content-box">
+                    <p>Das Projekt habe ich im Rahmen meiner Ausbildung “Full Stack
+                        Web Development” bei CareerFoundry erstellt. Dabei mussten
+                        genaue Zielvorgaben eingehalten werden.</p>
+                </div>
+            </div>
+            <h1 class="cs-headline cs-box-headline">WIE</h1>
+            <div class="cs-box">
+                <div class="overlay-box"></div>
+                <div class="content-box">
+                    <p>Das Projekt wurde umgesetzt mit modernen, leistungsfähigen
+                        Frameworks. Dadurch konnten die vielfältigen Aufgaben von
+                        der Erstellung eines Webservers mit Datenbankzugriff über
+                        die sichere Userauthentifizierung bis hin zu responsiven, zeit
+                        gemäßen User Interfaces auf effiziente Weise implementiert
+                        werden.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column column-two">
+            <div class="cs-box">
+                <a href="https://movie-app-483832.netlify.app/" target="_blank">
+                    <button class="button-cs-study">Link zur Live App</button>
+                </a>
+            </div>
+            <div class="cs-box">
+                <a href="https://github.com/Guenzler/movie_api" target="_blank">
+                    <button class="button-cs-study">Code Server-Side</button>
+                </a>
+            </div>
+            <div class="cs-box">
+                <a href="https://github.com/Guenzler/myFlix-client" target="_blank">
+                    <button class="button-cs-study">Code Client-Side</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="content-section headline-only">
+        <h1 class="cs-headline section-headline">Serverseitiger Teil</h1>
+    </section>
+    <section class="content-section">
+        <div class="column column-half">
+            <div class="cs-box">
+                <div class="overlay-box"></div>
+                <div class="content-box">
+                    <p> Zu Beginn musste ich mich mit den Grundlagen von Node.js vertraut machen, mit Node
+                        Version Management und dem Node Package
+                        Manager. Mit Express wurden der Webserver
+                        und die Endpunkte der REST API realisiert. Die
+                        Anwendung greift auf eine MongoDB Daten
+                        bank zu. Für das Testen der Endpunkte kam
+                        Postman zum Einsatz.</p>
+                </div>
+            </div>
+            <div class="cs-box">
+                <div class="overlay-box"></div>
+                <div class="content-box">
+                    <p> Eine Herausforderung war es, die zugrundeliegenden Mechanismen der User-Authentifizerung mit
+                        Passport zu verstehen und z.B.
+                        die Tokens richtig zu konfigurieren. Weitere
+                        Maßnahmen in Bezug auf Sicherheit waren
+                        Hashing des Userpassworts, serverseitige
+                        Input-Validierung sowie die CORS-Konfigurierung des Servers.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column column-half">
+            <div class="cs-box">
+                <img src="img/screen-express.png" alt="Screenshot Code der Express Anwendung" class="img-cs-box">
+            </div>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="column column-half">
+            <div class="cs-box">
+                <img src="img/swagger.png" alt="Screenshot Swagger Dokumentation" class="img-cs-box">
+            </div>
+        </div>
+        <div class="column column-half">
+            <div class="cs-box">
+                <div class="overlay-box"></div>
+                <div class="content-box">
+                    <p> Die Dokumentation der Endpunkte mit
+                        Swagger war zeitaufwendig.
+                        Bei der Implementierung der clientseitigen Anwendung konnte ich jedoch
+                        selbst sehr davon profitieren.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="column column-one">
+            <div class="cs-box">
+                <a href="https://github.com/Guenzler/movie_api" target="_blank">
+                    <button class="button-cs-study">Code Server-Side</button>
+                </a>
+            </div>
+        </div>
+        <div class="column column-one">
+            <div class="cs-box">
+                <a href="https://movie-app-2024-716106e34297.herokuapp.com/swagger/" target="_blank">
+                    <button class="button-cs-study">Swagger Dokumentation</button>
+                </a>
+            </div>
+        </div>
+        <div class="column column-one">
+        </div>
+    </section>
+    <section class="content-section headline-only">
+        <h1 class="cs-headline section-headline">Clientseitiger Teil</h1>
+    </section>
+    <section class="content-section">
+        <div class="column column-half">
+            <div class="cs-box">
+                <div class="overlay-box"></div>
+                <div class="content-box">
+                    <p>Auch hier musste ich mich im ersten Schritt
+                        mit der Entwicklungsumgebung und mit den
+                        Grundprinzipien von React vertraut machen.
+                        Die von React verwendeten .jsx Dateien
+                        werden vor dem Release in einem Build-Prozess in JavaScript übersetzt.
+                        Die Herangehensweise beim Entwickeln
+                        mit React erforderte etwas Eingewöhnung,
+                        erschien mir aber schon bald logisch und
+                        schlüssig.</p>
+                </div>
+            </div>
+        </div>
+        <div class="column column-half">
+            <div class="cs-box">
+                <img src="img/screen-react.png" alt="Screenshot Code der Express Anwendung" class="img-cs-box">
+            </div>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="column column-half">
+            <div class="cs-box">
+                <img src="img/screen-movieapp-1.jpg" alt="Screenshot Code der Express Anwendung" class="img-cs-box">
+            </div>
+        </div>
+        <div class="column column-half">
+            <div class="cs-box">
+                <div class="overlay-box"></div>
+                <div class="content-box">
+                    <p> Im Rahmen des Projekts wurden Ajax - Abfragen an die
+                        serverseitige API realisiert, die
+                        Auswertung der Responses
+                        inklusive Fehlerbehandlung,
+                        User-Authentifizierung und
+                        clientseitiges Routing. Das responsive Layout wurde mit Hilfe
+                        von React Bootstrap erstellt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section">
+        <div class="column column-one">
+            <div class="cs-box">
+                <a href="https://movie-app-483832.netlify.app/" target="_blank">
+                <button class="button-cs-study">Link zur App</button>
+                </a>
+            </div>
+        </div>
+        <div class="column column-one">
+            <div class="cs-box">
+                <a href="https://github.com/Guenzler/myFlix-client" target="_blank">
+                <button class="button-cs-study">Code Client-Side</button>
+                </a>
+            </div>
+        </div>
+        <div class="column column-one">
+        </div>
+    </section>
+    <section class="content-section headline-only">
+        <h1 class="cs-headline section-headline">Fazit</h1>
+    </section>
+    <section class="content-section">
+        <div class="column column-half">
+            <div class="cs-box">
+                <div class="overlay-box"></div>
+                <div class="content-box">
+                    <p>Über das klassische Programmieren mit JavaScript hinaus habe ich mich in diesem Projekt mit neuen
+                        Konzepten und Herangehensweisen vertraut gemacht und Erfahrungen mit den Frameworks Express und
+                        React gesammelt.
+                    </p>
+                    <p>Immer wieder war ich beeindruckt, wie mächtig diese Bibliotheken sind und wie elegant
+                        damit Probleme gelöst werden. Kurze Befehle reichen aus, um komplexe Aufgaben zu
+                        bewältigen, moderne User Interfaces lassen sich mit wenigen Seiten Code realisieren.
+                        Dabei steht immer auch die gute Strukturierung und Lesbarkeit des Codes im Vordergrund
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="impressum">
+        <p><a href="index.html#work"><button>Zurück zur Übersicht</button></a></p>
+        <p>Titelbild <a target="new" href="https://www.midjourney.com/home">midjourney</a></p>
+    </section>
+</body>
+
+</html>

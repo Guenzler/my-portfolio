@@ -1,0 +1,191 @@
+#home {
+    margin-bottom: 60px;
+}
+
+.content-section {
+    max-width: 1024px;
+    margin: 0 auto;
+    /* Center the container */
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    padding: 10px 30px 10px 30px;
+}
+
+.cs-nav-links {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: max-height 0.8s ease-out;
+    -o-transition: max-height 0.8s ease-out;
+    transition: max-height 0.8s ease-out;
+    overflow: hidden;
+    max-height: none;
+    background-color: #070808;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cs-nav-links li {
+    margin: 0;
+    padding: 5px 20px;
+    -webkit-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+
+.cs-nav-links li:hover {
+    background: #3b4283;
+    border-bottom: 0px;
+    text-decoration: none;
+}
+
+.cs-nav-links li:hover a {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.cs-nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+.headline-only {
+    padding: 20px 20px;
+}
+
+.column-one {
+    flex: 2;
+}
+
+.column-two {
+    flex: 1;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+
+.column-half {
+    flex: 1;
+}
+
+.img-cs-box {
+    width: 100%;
+    border: 1px solid #3b4283;
+}
+
+.cs-box {
+    position: relative;
+    margin-bottom: 40px;
+    /* Adjust for spacing */
+}
+
+.cs-headline {
+    font-size: 50px;
+    color: #3b4283;
+    padding: 0px 10px;
+}
+
+.cs-box-headline {
+    margin: -15px 0 -15px;
+}
+
+.section-headline {
+    margin: 25px 0 0;
+}
+
+.content-box {
+    position: relative;
+    /* Positioned relative to the parent box */
+    background-color: rgba(235, 233, 233, 0.85);
+    /* Light grey, slightly transparent */
+    padding: 20px 20px 10px;
+    border-radius: 5px;
+    z-index: 2;
+    /* Ensure this box is above the overlay */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* Optional: adds subtle shadow */
+}
+
+.content-box p {
+    z-index: 3;
+    /* Ensure the text is above everything */
+    position: relative;
+    margin-top: 0px;
+}
+
+.overlay-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(115, 99, 183);
+    z-index: 1;
+    /* Behind the content-box */
+    transform: translate(10px, 10px);
+    /* Offset */
+    border-radius: 5px;
+}
+
+.button-cs-study {
+    width: 250px;
+    vertical-align: center;
+}
+
+/*
+******************************************************
+* Define hero image size for different screen sizes  *
+******************************************************
+*/
+
+@media (min-width: 1100px) {
+    #home {
+        background-image: url('../img/largescreen-linkscs-450.jpg');
+        height: 450px;
+    }
+}
+
+@media (min-width: 525px) and (max-width: 1100px) {
+    #home {
+        background-image: url('../img/mediumscreen-links-cs-400.jpg');
+        height: 450px;
+    }
+}
+
+@media (max-width: 524px) {
+    #home {
+        background-image: url('../img/smallscreen-cs.jpg');
+        height: 400px;
+    }
+}
+
+/* 
+********************************************************
+* display columns beneath each other on smaller screens 
+********************************************************
+*/
+
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .column-two {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+
+    .cs-headline {
+        font-size: 40px;
+    }
+}
