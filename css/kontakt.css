@@ -1,0 +1,101 @@
+body {
+    background-color: #3b4283;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-intro-text {
+    flex: 1 1 300px;
+}
+
+.contact-form {
+    flex: 1 1 440px;
+    background-color: #e2e0e0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#contact-me {
+    padding: 100px 0;
+    background-color: white;
+}
+
+form {
+    display: block;
+    width: 400px;
+    max-width: 100%;
+}
+
+form ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+form ul li {
+    margin: 0 0 10px;
+    clear: both;
+    display: inline-block;
+    width: 100%;
+}
+
+form ul li p {
+    margin-top: 0px;
+}
+
+label {
+    display: block;
+    margin: 0;
+    font-size: 14px;
+}
+
+input {
+    margin: 0 0 6px;
+    border: 1px solid black;
+    padding: 6px 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+textarea {
+    border: 1px solid black;
+    padding: 6px 10px;
+    width: 100%;
+    height: 80px;
+    font-weight: 300;
+}
+
+#error {
+    color: rgb(186, 16, 16);
+    font-weight: 500;
+}
+
+@media all and (max-width: 1400px) {
+    .content-container {
+        margin: 0 10em;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .content-container {
+        margin: 0 4em;
+    }
+
+    .form-intro-text {
+        flex: 1 1 100px;
+    }
+
+    .flex-container{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+@media all and (max-width: 600px) {
+    .content-container {
+        margin: 0 20px;
+    }

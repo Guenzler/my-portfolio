@@ -13,6 +13,10 @@
     padding: 10px 30px 10px 30px;
 }
 
+.last-section {
+    margin-bottom: 80px;
+}
+
 .cs-nav-links {
     list-style: none;
     display: -webkit-box;

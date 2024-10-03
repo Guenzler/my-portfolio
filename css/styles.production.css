@@ -359,13 +359,6 @@ section {
   justify-content: center;
 }
 
-#contact {
-  background-color: #3b4283;
-  color: white;
-  text-align: center;
-  padding: 90px 20px 90px 20px;
-}
-
 .social-link {
   display: inline-block;
   /* Adjust these values if necessary */
@@ -404,10 +397,15 @@ section {
 }
 
 #impressum {
+  background-color: #3b4283;
+  color: white;
   text-align: center;
-  padding: 40px 20px 250px 20px;
+  padding: 90px 20px 90px 20px;
 }
 
+#impressum a {
+  color: white;
+}
 
 .icons {
   font-size: 12px;
